@@ -1,0 +1,39 @@
+body {
+    background-color: #4e4e4e;
+    border: 1px solid #9c9c9c;
+    color: white;
+}
+
+.nav-link {
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+    color: white;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.nav-link:hover {
+    color: white;
+}
+.nav-link:not(.active):hover {
+    background-color: #859bbc3d;
+}
+.nav-pills {
+    min-width: 140px;
+    background-color: #4e4e4e;
+}
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #a6caff9e;
+}
+
+.container-fluid {
+    padding: 10px;
+}
+.tab-content {
+    background-color: #3b3b3b;
+    min-width: 410px;
+}
+.tab-section {
+    border: 1px solid grey;
+}

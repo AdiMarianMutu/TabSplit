@@ -1,0 +1,73 @@
+<html style="height: 0;">
+  <head>
+    <!-- jQuery 3.6.0 -->
+    <script src="lib/jquery-3.6.0.min.js"></script>
+
+    <!-- BOOTSTRAP 5.0 -->
+    <script src="lib/bootstrap5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="popup.css">
+
+    <script src="injected/js/settings.js"></script>
+    <script src="popup.js" type="text/javascript"></script>
+  </head>
+    <body>
+      <div class="container-fluid" style="padding: 0;">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li><button class="nav-link active" id="pills-manager-tab" data-bs-toggle="pill" data-bs-target="#pills-manager" type="button" role="tab" aria-controls="pills-manager" aria-selected="true">Tabs</button></li>
+          <li><button class="nav-link" id="pills-settings-tab" data-bs-toggle="pill" data-bs-target="#pills-settings" type="button" role="tab" aria-controls="pills-settings" aria-selected="false">Settings</button></li>
+          <li><button class="nav-link" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-info" aria-selected="false">Info</button></li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-manager" role="tabpanel" aria-labelledby="pills-manager-tab">
+            <div class="container-fluid">
+              <div id="tab-creation-form" class="container-fluid tab-section">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="row">
+                      <div class="col-12 ">
+                        <label for="url">URL</label>
+                        <input type="text" class="form-control" id="url" placeholder="https://www.hello-world.com/">
+                      </div>
+                      <div class="col">
+                        <label for="x">X</label>
+                        <input type="number" class="form-control" id="x" value="10" min="0">
+                      </div>
+                      <div class="col">
+                        <label for="y">Y</label>
+                        <input type="number" class="form-control" id="y" value="10" min="0">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <label for="x">W</label>
+                        <input type="number" class="form-control" id="w" value="450" min="150">
+                      </div>
+                      <div class="col">
+                        <label for="y">H</label>
+                        <input type="number" class="form-control" id="h" value="300" min="50">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 d-flex justify-content-center mt-4">
+                    <button type="submit" id="create-new-tab" class="btn btn-secondary">Create</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab">
+            <div class="d-flex align-items-center container-fluid">
+              <h2 class="user-select-none text-uppercase text-center w-100 m-0">Coming soon!</h2>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
+            <div class="container-fluid">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+{
+    "name": "Tab Split",
+    "description": "Splits the current tab into multiple tabs",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+      "storage",
+      "activeTab",
+      "cookies",
+      "<all_urls>"
+    ],
+    "action": {
+      "default_popup": "src/popup.html",
+      "default_icon": "s.png"
+    },
+    "commands": {
+      "_execute_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+A",
+          "mac": "MacCtrl+Shift+A"
+        },
+        "description": "Settings"
+      }
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "css": [
+            "src/injected/css/ui.css",
+            "src/injected/css/tab.css"
+          ],
+          "js": [
+            "src/lib/jquery-3.6.0.min.js",
+            "src/injected/js/settings.js",
+            "src/injected/js/audio.js",
+            "src/injected/js/classes/context-menu.js",
+            "src/injected/js/classes/Tab/_base.js",
+            "src/injected/js/classes/Tab/helper.js",
+            "src/injected/js/classes/Tab/debug.js",
+            "src/injected/js/classes/Tab/ui.js",
+            "src/injected/js/classes/Tab/core.js",
+            "src/injected/js/main.js"
+          ]
+        }
+      ]
+  }
