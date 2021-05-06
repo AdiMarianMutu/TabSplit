@@ -7,6 +7,6 @@ The extension is not yet finished and I started it just for fun.
 The UI is done with **JS**, **jQuery 3.4.0**, **HTML**/**CSS** and **Bootstrap 5**.
 ## The extension is limited by the same-origin policy!
 At the actual stage, this is a **BIG** issue
+### The extension is not yet complete and some of the code is still being written...
 
-#### Preview
-[![Preview](https://res.cloudinary.com/marcomontalbano/image/upload/v1620319260/video_to_markdown/images/video--81708c115b48c30d2f256efd1f6d8fad-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://i.imgur.com/y0txdAB.mp4 "Presentation")
+<img src="https://github.com/Xxshark888xX/TabSplit/blob/main/TabSplit%20Preview.gif?raw=true" width="1200px">
